@@ -45,6 +45,7 @@
   //basic color schema
   --plain-white: #fff;
   --text-color: #4E4E4E;
+  --link-color: #1E1E1E;
   --text-color-blue: #5089FD;
   --headers-color: #1D1D1D;
   --orange-color: #FD8550;
@@ -56,11 +57,14 @@
   --avenir-black-font: 'AvenirBlack', sans-serif;
   --avenir-heavy-font: 'AvenirHeavy', sans-serif;
 }
+@import "grid";
 
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding:0;
+  margin:0;
 }
 
 html {
@@ -85,5 +89,41 @@ body {
 
   textarea, select, input, button {
     outline: none;
+  }
+  a, a:hover{
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--link-color);
+  }
+  button, button:hover{
+    transition: color, background, border 0.3s ease;
+  }
+  .btn{
+    font-family: var(--mark-pro-font);
+    border:2px solid var(--orange-color);
+    border-radius:24px;
+    background: var(--plain-white);
+    color: var(--orange-color);
+    padding: 0.7em 2.7em;
+    display: inline-block;
+    line-height: 19px;
+    &:hover{
+      background: var(--orange-color);
+      color: var(--plain-white);
+    }
+  }
+  .btn-reverse{
+    font-family: var(--mark-pro-font);
+    border:2px solid var(--orange-color);
+    border-radius:24px;
+    background: var(--orange-color);
+    color: var(--plain-white);
+    padding: 0.7em 2.7em;
+    display: inline-block;
+    line-height: 19px;
+    &:hover{
+      background: var(--plain-white);
+      color: var(--orange-color);
+    }
   }
 }

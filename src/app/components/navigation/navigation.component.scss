@@ -1,7 +1,60 @@
 header{
+  & > .container__row{
+    height: 100%;
+    align-items: center;
+    .logo{
+      img{
+        display: block;
+      }
+    }
+    .main_menu{
+      ul{
+        list-style: none;
+        display: flex;
+        li{
+          margin-right: 3.5em;
+          a{
+            position: relative;
+            line-height: 19px;
+            &:hover{
+              color: var(--text-color-blue);
+            }
+            &:not(:only-child):after{
+              content: '';
+              width:12px;
+              height: 7px;
+              background: url('../../../assets/images/navigation/dropdown.svg');
+              display: inline-block;
+              position: absolute;
+              right: -20px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+          .submenu{
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility .3s linear,opacity .3s linear;
+          }
+          &:hover{
+            .submenu{
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .login{
+      margin-left: auto;
+      .btn{
+        margin-left: 1em;
+      }
+    }
+  }
   height:80px;
-  display: flex;
-  align-items: center;
   padding:0 40px;
   border-bottom: 1px solid rgba(244, 244, 244, .9);
+
 }
