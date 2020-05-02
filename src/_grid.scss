@@ -24,6 +24,9 @@ $map-grid-props: (
 
 @mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
   @include create-mq($breakpoint, 'min') {
+    &{
+      max-width:$breakpoint * 1px;
+    }
     &__col#{$modifier}-offset-0 {
       margin-left: 0;
     }
@@ -55,9 +58,9 @@ $map-grid-props: (
 }
 
 .container {
-//  max-width: $grid__bp-md * 1px;
+  //max-width: $grid__bp-md * 1px;
   margin: 0 auto;
-  &--fluid {
+  &__fluid {
     margin: 0;
     max-width: 100%;
   }
@@ -68,5 +71,50 @@ $map-grid-props: (
   }
   @each $modifier , $breakpoint in $map-grid-props {
     @include create-col-classes($modifier, $grid__cols, $breakpoint);
+  }
+}
+
+@mixin lower-than($breakpoint) {
+  @if $breakpoint == "sm" {
+    @media (max-width: 576px) {
+      @content;
+    }
+  } @else if $breakpoint == "md" {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == "lg" {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $breakpoint == "xl" {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+  }
+}
+
+@mixin higher-than($breakpoint) {
+  @if $breakpoint == "sm" {
+    @media (min-width: 576px) {
+      @content;
+    }
+  } @else if $breakpoint == "md" {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == "lg" {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == "xl" {
+    @media (max-width: 1200px) {
+      @content;
+    }
   }
 }

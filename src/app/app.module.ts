@@ -10,6 +10,7 @@ import { ArticlesComponent } from './components/articles/articles.component';
 import { RocketComponent } from './components/rocket/rocket.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { QuestionsComponent } from './components/questions/questions.component';
+import {ClickOutsideModule} from 'ng4-click-outside';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { QuestionsComponent } from './components/questions/questions.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ClickOutsideModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,28 @@
-<p>rocket works!</p>
+<section class="findByState">
+  <div class="container">
+    <div class="container__row">
+      <div class="searchWrapper container__col-md-5">
+        <h2>Learn more about Nonprofits by state.</h2>
+        <div class="searchBox">
+          <div class="searchInner">
+            <div class="inputWrapper">
+              <img src="../../../assets/images/searchComponent/search.svg"/>
+              <input (input)="searchForResults($event.target.value)" id="search-input">
+            </div>
+            <div class="search_result" [ngClass]="{'open-result' : showResults, 'close-result' : !showResults}">
+              <ul>
+                <li *ngFor="let state of searchResults">
+                  <span (click)="goToState(state.code, state.name)" (clickOutside)="onClickedOutside($event)">{{state.name}}
+                    <img src="../../../assets/images/searchComponent/Arrow-orange.svg"/></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>

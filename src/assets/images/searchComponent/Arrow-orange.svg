@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>E0132855-CAA8-4E6B-A40F-F47357D289F5</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Nonprofit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="review-entity-type/nonprofit@2x" transform="translate(-1269.000000, -1952.000000)">
+            <g id="Launch+Dropdown" transform="translate(0.000000, 1512.000000)">
+                <g id="Modul/Search/Active" transform="translate(755.000000, 336.000000)">
+                    <g id="form-a-limited">
+                        <g id="1">
+                            <g id="icon/32/Status/Arrow-orange" transform="translate(530.000000, 120.000000) rotate(-270.000000) translate(-530.000000, -120.000000) translate(514.000000, 104.000000)">
+                                <circle id="Oval" fill="#FEF6ED" cx="16" cy="16" r="16"></circle>
+                                <g id="Icon/16/Arrow-Orange" transform="translate(16.000000, 16.000000) scale(1, -1) rotate(-270.000000) translate(-16.000000, -16.000000) translate(8.000000, 8.000000)" fill="#FD8550">
+                                    <path d="M7.80459624,3.70317943 L7.80075,3.707 C7.40897519,4.09616022 7.40685565,4.72923315 7.79601588,5.12100795 C7.79680225,5.12179961 7.79758995,5.12258995 7.79837898,5.12337898 L10.177,7.502 L10.177,7.502 L2.998,7.502 C2.44681982,7.502 2,7.94881982 2,8.5 C2,9.05118018 2.44681982,9.498 2.998,9.498 L10.177,9.498 L10.177,9.498 L7.79837898,11.876621 C7.40790927,12.2670907 7.40790927,12.9001672 7.79837898,13.2906369 C7.799168,13.2914259 7.79995834,13.2922136 7.80075,13.293 L7.80459624,13.2968206 C8.19581354,13.685427 8.82777221,13.6840096 9.21724243,13.2936522 L13.2953034,9.20630188 C13.6847557,8.81596243 13.6847557,8.18403757 13.2953034,7.79369812 L9.21724243,3.70634776 C8.82777221,3.31599037 8.19581354,3.31457299 7.80459624,3.70317943 Z" id="Path"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

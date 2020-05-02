@@ -50,6 +50,7 @@
   --headers-color: #1D1D1D;
   --orange-color: #FD8550;
   --border-color: #E9E9E9;
+  --border-gray-color: #F4F4F4;
   //basic font schema
   --font-size: 16px;
   --mark-pro-font: 'MarkPro', sans-serif;
@@ -58,7 +59,7 @@
   --avenir-heavy-font: 'AvenirHeavy', sans-serif;
 }
 @import "grid";
-
+@import "animations";
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -89,14 +90,21 @@ body {
 
   textarea, select, input, button {
     outline: none;
+    font-size: var(--font-size);
   }
   a, a:hover{
-    transition: all 0.3s ease;
+    transition: color 0.3s ease, border 0.3s ease, background 0.3s ease;
     text-decoration: none;
     color: var(--link-color);
   }
+  a:hover{
+    color: var(--text-color-blue)
+  }
   button, button:hover{
     transition: color, background, border 0.3s ease;
+  }
+  ul{
+    list-style: none;
   }
   .btn{
     font-family: var(--mark-pro-font);
