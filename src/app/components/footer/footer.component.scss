@@ -2,5 +2,86 @@ footer{
 .copyright{
   border-top:1px solid rgba(244, 244, 244, 0.9);
   padding:40px 0;
+  .copy{
+      color: #4f4f4f;
+  }
+  .social{
+    ul{
+      text-align: right;
+      li{
+        display: inline-block;
+        a{
+          margin:0 6px;
+          transition: opacity 0.3s ease;
+          &:hover{
+            opacity: 0.9;
+          }
+          img{
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
 }
+  .newsletter{
+    margin-bottom: 75px;
+    .logo{
+      display: flex;
+      align-items: center;
+      img{
+        display: block;
+      }
+    }
+    .newsletterWrapper{
+      margin-left: auto;
+      text-align: right;
+      label{
+        font-family: var(--mark-pro-font);
+        margin-right: 16px;
+        span{
+          color:#7A7A7A;
+        }
+      }
+      input{
+        margin-right: 8px;
+        font-size: 0.875rem;
+        &[type="submit"]{
+          margin:0;
+        }
+      }
+    }
+  }
+  .footerNav{
+    margin-bottom: 80px;
+    & > .container__row{
+      justify-content: space-between;
+    }
+    .menuColumn{
+      h4{
+        color:#7A7A7A;
+        font-size: 0.75rem;
+        line-height: 14px;
+        text-transform: uppercase;
+        opacity: 0.9;
+        margin:0;
+        margin-bottom:24px;
+      }
+      ul{
+        li{
+          a{
+            font-size:  0.875rem;
+            line-height: 17px;
+            color:#7A7A7A;
+            margin-bottom: 8px;
+            display: inline-block;
+            &:hover{
+              color: var(--text-color-blue);
+            }
+          }
+        }
+      }
+    }
+
+  }
 }

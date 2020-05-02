@@ -14,7 +14,17 @@
       height: 80px;
       .inputWrapper {
         position: relative;
-
+        &:before{
+          content:'';
+          height: 16px;
+          width: 16px;
+          display: block;
+          position: absolute;
+          left: 40px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: url('../../../assets/images/searchComponent/search.svg') no-repeat scroll center;
+        }
         & > img {
           position: absolute;
           left: 40px;

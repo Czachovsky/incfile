@@ -6,7 +6,6 @@
         <div class="searchBox">
           <div class="searchInner">
             <div class="inputWrapper">
-              <img src="../../../assets/images/searchComponent/search.svg"/>
               <input (input)="searchForResults($event.target.value)" id="search-input">
             </div>
             <div class="search_result" [ngClass]="{'open-result' : showResults, 'close-result' : !showResults}">

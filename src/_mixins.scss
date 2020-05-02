@@ -1,0 +1,29 @@
+@mixin btn-styles() {
+  font-family: var(--mark-pro-font);
+  border: 2px solid var(--orange-color);
+  border-radius: 24px;
+  background: var(--plain-white);
+  color: var(--orange-color);
+  padding: 0.7em 2.7em;
+  display: inline-block;
+  line-height: 19px;
+  &:hover {
+    background: var(--orange-color);
+    color: var(--plain-white);
+  }
+}
+
+@mixin btn-styles-reverse() {
+  font-family: var(--mark-pro-font);
+  border: 2px solid var(--orange-color);
+  border-radius: 24px;
+  background: var(--orange-color);
+  color: var(--plain-white);
+  padding: 0.7em 2.7em;
+  display: inline-block;
+  line-height: 19px;
+  &:hover {
+    background: var(--plain-white);
+    color: var(--orange-color);
+  }
+}

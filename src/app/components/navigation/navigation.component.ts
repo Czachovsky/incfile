@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -7,12 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
   showMobileMenuActive: boolean;
-  constructor() { }
+  showMobileMenuState: boolean;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
   showMobileMenu() {
     this.showMobileMenuActive = !this.showMobileMenuActive;
+    setTimeout(() => {
+      this.showMobileMenuState = true;
+    }, 300);
+  }
+
+  hideMobileMenu(e) {
+    console.log(e.target.classList);
+    if (!e.target.classList.contains('hamburgerBox') && !e.target.classList.contains('hamburgerInner')) {
+      this.showMobileMenuState = false;
+      setTimeout(() => {
+        this.showMobileMenuActive = false;
+      }, 300);
+    }
   }
 }

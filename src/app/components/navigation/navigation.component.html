@@ -1,10 +1,10 @@
 <header class="container__fluid">
   <div class="container__row">
    <div class="logo container__col-md-2">
-     <img src="../../../assets/images/logo/Logo.svg" alt="">
+     <img src="../../../assets/images/logo/Logo.svg" alt="Incfile.Com">
    </div>
-    <div class="container__row container__col-md-10 menuContainer">
-    <nav class="main_menu container__col-md-8">
+    <div class="container__row container__col-lg-10 menuContainer" [ngClass]="{'showIt' : showMobileMenuState}" (clickOutside)="hideMobileMenu($event)">
+    <nav class="main_menu container__col-lg-8">
       <ul>
         <li>
           <a href="#">Review Entity Type</a>
@@ -29,7 +29,7 @@
         </li>
       </ul>
     </nav>
-    <div class="login container__col-md-4">
+    <div class="login container__col-lg-4">
       <a href="#">Login</a>
       <a href="#" class="btn">Incoporate now</a>
     </div>
