@@ -24,8 +24,14 @@ $map-grid-props: (
 
 @mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
   @include create-mq($breakpoint, 'min') {
-    &{
-      max-width:$breakpoint * 1px;
+    @if($breakpoint == 0){
+      &{
+        max-width:100%;
+      }
+    } @else {
+      &{
+        max-width:$breakpoint * 1px;
+      }
     }
     &__col#{$modifier}-offset-0 {
       margin-left: 0;
@@ -58,7 +64,6 @@ $map-grid-props: (
 }
 
 .container {
-  //max-width: $grid__bp-md * 1px;
   margin: 0 auto;
   &__fluid {
     margin: 0;

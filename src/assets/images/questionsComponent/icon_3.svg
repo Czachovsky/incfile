@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="21px" viewBox="0 0 32 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>5C8D1F91-B4EB-46C4-B4AD-85F9FE50368F</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Nonprofit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.75">
+        <g id="review-entity-type/nonprofit@2x" transform="translate(-279.000000, -973.000000)">
+            <g id="Information" transform="translate(255.000000, 770.000000)">
+                <g id="Modul/Tab/Inactive-Copy" transform="translate(0.000000, 174.000000)">
+                    <g id="icon/review-entity-types/color/is-a-nonprofit-right-for-you" transform="translate(24.000000, 23.500000)">
+                        <g id="20200406_ICON_ICON-137" transform="translate(0.000000, 6.000000)">
+                            <path d="M29.87,5.91 L22.79,7.86 L19.18,17.8 C19.0986919,18.0543755 18.9771514,18.2940803 18.82,18.51 C18.6081043,18.5667459 18.3893317,18.5936717 18.17,18.59 L2.28,19.35 C1.44831955,19.3445462 0.775453818,18.6716805 0.77,17.84 L0.77,2.51 L28.25,2.41 C30.62,2.71 30.48,3.9 29.87,5.91 Z" id="Path" fill="#FCE7D0" fill-rule="nonzero"></path>
+                            <path d="M6.36,0.75999216 L6.36,19.35 L2.28,19.35 C1.44831955,19.3445462 0.775453818,18.6716805 0.77,17.84 C0.77,17.84 0.77,2.18 0.77,2.14 C0.832695542,1.3587671 1.48625944,0.757488315 2.27,0.75999216 L6.36,0.75999216 Z" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M22.79,7.06 L19.66,17.24 C19.3053502,18.2617393 18.4392358,19.0214887 17.38,19.24 C17.1681043,19.2967459 16.9493317,19.3236717 16.73,19.32 L6.36,19.32 L6.36,0.76 L28.76,0.76 C30.1413357,0.765034823 31.2675069,1.86903731 31.3,3.25 C31.3,4.25 30.8,5.58 29.89,5.9 C28.82,6.28 22.9,6.7 22.79,7.06 Z" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <line x1="3.76" y1="13.8" x2="3.76" y2="17.24" id="Path" stroke="#1D1D1B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
