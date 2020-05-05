@@ -1,14 +1,31 @@
 import {Component, OnInit} from '@angular/core';
+import {animate, style, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-questions',
   templateUrl: './questions.component.html',
-  styleUrls: ['./questions.component.scss']
+  styleUrls: ['./questions.component.scss'],
+  animations: [
+    trigger(
+      'enterAnimation', [
+        transition(':enter', [
+          style({opacity: 0}),
+          animate('.5s ease-out',
+            style({opacity: 1}))
+        ]),
+        transition(':leave', [
+          style({opacity: 1}),
+          animate('.5s ease-out',
+            style({opacity: 0}))
+        ])
+      ]
+    )
+  ]
 })
 export class QuestionsComponent implements OnInit {
 
   expandBarElms: any;
-
+  activeTab: number;
   constructor() {
     this.expandBarElms = [
       {
@@ -51,6 +68,7 @@ export class QuestionsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.activeTab = 0;
   }
 
   expandBarAction(index) {
@@ -63,6 +81,7 @@ export class QuestionsComponent implements OnInit {
       }
     });
     this.expandBarElms[index].active = true;
+    this.activeTab = index;
   }
 
 }

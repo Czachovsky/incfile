@@ -2,15 +2,8 @@
   <div class="container__row">
     <div class="container__col-md-4 expandBars">
       <ul>
-<!--        <li><div><span>Overview</span></div></li>-->
-<!--        <li><div><span>What Is a Nonprofit?</span></div></li>-->
-<!--        <li><div><span>Is a Nonprofit right for you?</span></div></li>-->
-<!--        <li><div><span>Advantages & Disadvantages</span></div></li>-->
-<!--        <li><div><span>Types of Nonprofit</span></div></li>-->
-<!--        <li><div><span>501c3 Status</span></div></li>-->
-<!--        <li><div><span>How to Start a Nonprofit</span></div></li>-->
-
-        <li *ngFor="let bar of expandBarElms; let i = index" [ngClass]="{'active' : bar.active, 'pseudoActive' : bar.pseudoActive, 'hovered': bar.hovered}">
+        <li *ngFor="let bar of expandBarElms; let i = index"
+            [ngClass]="{'active' : bar.active, 'pseudoActive' : bar.pseudoActive, 'hovered': bar.hovered}">
           <div (click)="expandBarAction(i)">
             <span>
               {{bar.name}}
@@ -20,6 +13,13 @@
 
       </ul>
     </div>
-    <div class="container__col-md-8"></div>
+    <div class="container__col-md-8">
+      <app-questions-overview *ngIf="activeTab === 0" [@enterAnimation]></app-questions-overview>
+      <app-questions-what-is-nonprofit *ngIf="activeTab === 1" [@enterAnimation]></app-questions-what-is-nonprofit>
+      <app-questions-is-nonprofit-good *ngIf="activeTab === 2" [@enterAnimation]></app-questions-is-nonprofit-good>
+      <app-questions-nonprofit-types *ngIf="activeTab === 3" [@enterAnimation]></app-questions-nonprofit-types>
+      <app-questions-status *ngIf="activeTab === 4" [@enterAnimation]></app-questions-status>
+      <app-questions-start-nonprofit *ngIf="activeTab === 5" [@enterAnimation]></app-questions-start-nonprofit>
+    </div>
   </div>
 </section>
