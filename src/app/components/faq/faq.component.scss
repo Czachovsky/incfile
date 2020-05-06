@@ -1,0 +1,25 @@
+@import "../../../mixins";
+
+.chooseRight {
+  padding: 160px 0;
+  background: url('../../../assets/images/faqComponent/usa-map.svg') no-repeat scroll center / auto;
+  .container__col-md-5{
+    margin: 0 auto;
+    text-align: center;
+  }
+  h2 {
+    line-height: 48px;
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+  }
+  span{
+    color: var(--text-color);
+    display: inline-block;
+    margin-bottom: 32px;
+  }
+  &Button{
+    a{
+      @include btn-styles-reverse();
+    }
+  }
+}

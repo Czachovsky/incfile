@@ -6,20 +6,15 @@ import {animate, style, transition, trigger} from '@angular/animations';
   templateUrl: './questions.component.html',
   styleUrls: ['./questions.component.scss'],
   animations: [
-    trigger(
-      'enterAnimation', [
-        transition(':enter', [
-          style({opacity: 0}),
-          animate('.5s ease-out',
-            style({opacity: 1}))
-        ]),
-        transition(':leave', [
-          style({opacity: 1}),
-          animate('.5s ease-out',
-            style({opacity: 0}))
-        ])
-      ]
-    )
+    trigger('slideInOut', [
+      transition(':enter', [
+        style({transform: 'translateY(-100%)'}),
+        animate('200ms ease-in', style({transform: 'translateY(0%)'}))
+      ]),
+      transition(':leave', [
+        animate('200ms ease-in', style({transform: 'translateY(-100%)'}))
+      ])
+    ])
   ]
 })
 export class QuestionsComponent implements OnInit {

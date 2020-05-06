@@ -14,12 +14,12 @@
       </ul>
     </div>
     <div class="container__col-md-8">
-      <app-questions-overview *ngIf="activeTab === 0" [@enterAnimation]></app-questions-overview>
-      <app-questions-what-is-nonprofit *ngIf="activeTab === 1" [@enterAnimation]></app-questions-what-is-nonprofit>
-      <app-questions-is-nonprofit-good *ngIf="activeTab === 2" [@enterAnimation]></app-questions-is-nonprofit-good>
-      <app-questions-nonprofit-types *ngIf="activeTab === 3" [@enterAnimation]></app-questions-nonprofit-types>
-      <app-questions-status *ngIf="activeTab === 4" [@enterAnimation]></app-questions-status>
-      <app-questions-start-nonprofit *ngIf="activeTab === 5" [@enterAnimation]></app-questions-start-nonprofit>
+      <app-questions-overview *ngIf="activeTab === 0" [@slideInOut]></app-questions-overview>
+      <app-questions-what-is-nonprofit *ngIf="activeTab === 1" [@slideInOut]></app-questions-what-is-nonprofit>
+      <app-questions-is-nonprofit-good *ngIf="activeTab === 2" [@slideInOut]></app-questions-is-nonprofit-good>
+      <app-questions-nonprofit-types *ngIf="activeTab === 3" [@slideInOut]></app-questions-nonprofit-types>
+      <app-questions-status *ngIf="activeTab === 4" [@slideInOut]></app-questions-status>
+      <app-questions-start-nonprofit *ngIf="activeTab === 5" [@slideInOut]></app-questions-start-nonprofit>
     </div>
   </div>
 </section>

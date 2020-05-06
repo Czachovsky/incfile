@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="824px" height="777px" viewBox="0 0 824 777" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>5BFACEBA-710D-4BDF-9357-499A5C8C0EEA</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <radialGradient cx="0%" cy="100%" fx="0%" fy="100%" r="110.956656%" gradientTransform="translate(0.000000,1.000000),scale(0.942961,1.000000),rotate(-44.135525),translate(-0.000000,-1.000000)" id="radialGradient-1">
+            <stop stop-color="#FFB8DA" offset="0%"></stop>
+            <stop stop-color="#FCEFEF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Nonprofit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="review-entity-type/nonprofit@2x" transform="translate(-856.000000, 0.000000)" fill="url(#radialGradient-1)">
+            <g id="main-header/illustration" transform="translate(732.000000, 0.000000)">
+                <g id="bg-main">
+                    <path d="M948.199952,0 L948.199952,777 L124.199952,776.993034 C149.072242,343.700479 508.480121,0 948.199952,0 Z" transform="translate(536.199952, 388.500000) scale(1, -1) translate(-536.199952, -388.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
