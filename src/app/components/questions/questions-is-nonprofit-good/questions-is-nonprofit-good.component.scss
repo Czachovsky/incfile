@@ -1,0 +1,33 @@
+.isNonProfitGood{
+  padding-top:24px;
+  span{
+    line-height: 24px;
+    color:#7A7A7A;
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+    display: block;
+  }
+  h3{
+    font-size: 1.5rem;
+    line-height: 29px;
+    margin-bottom: 24px;
+  }
+  div{
+    background: #F2F6FF;
+    border-radius: 5px 48px 48px 5px;
+    padding: 45px 40px;
+    h4{
+      font-size: 1.25rem;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    ul{
+      li{
+        line-height: 19px;
+        margin-bottom: 12px;
+        color:#63666E;
+        padding-left:25px;
+      }
+    }
+  }
+}
