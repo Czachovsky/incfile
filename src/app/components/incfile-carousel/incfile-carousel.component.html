@@ -1,0 +1,16 @@
+<div [ngClass]="{'loading': loader, 'mw': !options.disableAutoWidth, 'withShadows' : showShadow && options.shadows,'shadowRight' : showShadow && !options.max && options.shadows, 'shadowLeft' : (options.position !== 0 || options.max) && options.shadows}" #main class="incfile-carousel">
+  <div #container class="incfile-carousel-container"  (swiperight)="swipe(0, $event)" (swipeleft)="swipe(1, $event)" (scroll)="shadowsOnScroll($event)">
+    <ng-content></ng-content>
+  </div>
+  <div class="incfile-carousel-nav" *ngIf="options.nav">
+    <button appIncfileSpaceDebounceClick type="button" [ngClass]="{'disabled': options.counter === 0}" role="presentation" (click)="swipe(0, $event);" class=" casino-nav-button incfile-carousel-nav-prev">
+      <span aria-label="Previous">‹</span>
+    </button>
+    <button appIncfileSpaceDebounceClick type="button" role="presentation" [ngClass]="{'disabled': options.max}" (debounceClick)="swipe(1, $event);" [debounceTime]="200" class="casino-nav-button incfile-carousel-nav-next">
+      <span aria-label="Next">›</span>
+    </button>
+  </div>
+  <div *ngIf="options.dots" class="incfile-carousel-dots">
+    <button *ngFor="let button of options.itemsArray; let i = index" role="button" class="incfile-carousel-dot" [ngClass]="{'active': options.counter === i}" (click)="swipeTo(i)"><span></span></button>
+  </div>
+</div>

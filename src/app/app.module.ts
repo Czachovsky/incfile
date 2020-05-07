@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule, HAMMER_GESTURE_CONFIG, HammerGestureConfig, HammerModule} from '@angular/platform-browser';
+import {Injectable, NgModule} from '@angular/core';
 
 import { AppRoutingModule } from './shared/routing/app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +19,24 @@ import { QuestionsNonprofitTypesComponent } from './components/questions/questio
 import { QuestionsStatusComponent } from './components/questions/questions-status/questions-status.component';
 import { QuestionsStartNonprofitComponent } from './components/questions/questions-start-nonprofit/questions-start-nonprofit.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { IncfileCarouselComponent } from './components/incfile-carousel/incfile-carousel.component';
+import {ClickDirectiveModule} from './shared/directives/click.directive';
+import 'hammerjs';
+
+@Injectable()
+export class MyHammerConfig extends HammerGestureConfig {
+  overrides = <any> {
+    pan: {threshold: 5, direction: 6},
+    swipe: {
+      velocity: 0.4,
+      threshold: 20,
+      direction: 6,
+      touchAction: 'auto'
+    },
+    pinch: {enable: false},
+    rotate: {enable: false}
+  };
+}
 
 @NgModule({
   declarations: [
@@ -36,15 +54,22 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     QuestionsAdvantagesDisadvantagesComponent,
     QuestionsNonprofitTypesComponent,
     QuestionsStatusComponent,
-    QuestionsStartNonprofitComponent
+    QuestionsStartNonprofitComponent,
+    IncfileCarouselComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ClickOutsideModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ClickDirectiveModule,
+    HammerModule
+
   ],
-  providers: [],
+  providers: [    {
+    provide: HAMMER_GESTURE_CONFIG,
+    useClass: MyHammerConfig
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

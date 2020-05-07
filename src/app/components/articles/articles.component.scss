@@ -1,58 +1,70 @@
-.relatedArticles{
-  h2{
+.relatedArticles {
+  h2 {
     display: block;
     text-align: center;
     font-size: 1.5rem;
     line-height: 29px;
     margin-bottom: 80px;
   }
-  .articles{
-    .singleArticle{
-      cursor: pointer;
-      max-width: 370px;
-      box-shadow: 0 20px 30px 0 rgba(233, 235, 240, 0.5);
-      border-radius: 5px;
-      overflow: hidden;
-      &:hover{
 
-      }
-      .imgWrapper{
-        height: 180px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        position: relative;
-        span{
-          border-radius: 5px;
-          background: var(--plain-white);
-          color:#789EFA;
-          font-size:  0.75rem;
-          text-transform: uppercase;
-          font-family: var(--avenir-black-font);
-          position: absolute;
-          left: 24px;
-          top:24px;
-          padding: 12px 15px 12px 28px;
-          &:before{
-            content:'';
-            background: #789EFA;
-            height: 4px;
-            width: 4px;
-            display: block;
-            border-radius: 100%;
+  .articles {
+    margin-bottom: 160px;
+    .singleArticleWrapper {
+      padding: 15px;
+
+      .singleArticle {
+        cursor: pointer;
+        max-width: 370px;
+        box-shadow: 0 20px 30px 0 rgba(233, 235, 240, 0.5);
+        border-radius: 5px;
+        overflow: hidden;
+
+        &:hover {
+
+        }
+
+        .imgWrapper {
+          height: 180px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: relative;
+
+          span {
+            border-radius: 5px;
+            background: var(--plain-white);
+            color: #789EFA;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-family: var(--avenir-black-font);
             position: absolute;
-            left:16px;
-            top:50%;
-            transform: translateY(-50%);
+            left: 24px;
+            top: 24px;
+            padding: 12px 15px 12px 28px;
+
+            &:before {
+              content: '';
+              background: #789EFA;
+              height: 4px;
+              width: 4px;
+              display: block;
+              border-radius: 100%;
+              position: absolute;
+              left: 16px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
           }
         }
-      }
-      .descWrapper{
-          color:var(--text-color-blue);
+
+        .descWrapper {
+          color: var(--text-color-blue);
           font-family: var(--avenir-heavy-font);
           padding: 24px 33px 24px 60px;
 
+        }
       }
     }
+
   }
 }

@@ -1,26 +1,25 @@
 <section class="relatedArticles">
   <h2>Related Articles</h2>
   <div class="articles">
-      <div class="singleArticle">
-        <div class="imgWrapper" style="background-image: url('../../../assets/images/articlesComponent/article1.png')">
-          <span>Most popular</span>
+
+    <app-incfile-carousel *ngIf="sliderArray" [options]="{position: 0, width: 400, breakpoints: [
+        {items: 2, screenMin: 500, screenMax: 992},
+         {items: 3, screenMin: 1200, screenMax: 9999}],
+          dots: true,
+          nav: false,
+          items: sliderArray}">
+      <div class="singleArticleWrapper" *ngFor="let article of sliderArray">
+        <div class="singleArticle" >
+          <div class="imgWrapper" [style.backgroundImage]="'url('+ article.img +')'">
+            <span *ngIf="article.specialBadge">{{article.specialBadgeText}}</span>
+          </div>
+          <div class="descWrapper">
+            {{article.text}}
+          </div>
         </div>
-        <div class="descWrapper">
-          Here’s Seven Tips to Steer You in the Right Direction.
-        </div>
       </div>
-    <div class="singleArticle">
-      <div class="imgWrapper" style="background-image: url('../../../assets/images/articlesComponent/article2.png')"></div>
-      <div class="descWrapper">
-      How to Balance Owning Multiple Businesses.
-      </div>
-    </div>
-    <div class="singleArticle">
-      <div class="imgWrapper" style="background-image: url('../../../assets/images/articlesComponent/article3.png')"></div>
-      <div class="descWrapper">
-      Here’s Seven Tips to Steer You in the Right Direction.
-      </div>
-    </div>
+
+    </app-incfile-carousel>
 
   </div>
 </section>

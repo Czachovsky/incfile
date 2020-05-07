@@ -23,7 +23,6 @@ export class NavigationComponent implements OnInit {
   }
 
   hideMobileMenu(e) {
-    console.log(e.target.classList);
     if (!e.target.classList.contains('hamburgerBox') && !e.target.classList.contains('hamburgerInner')) {
       this.showMobileMenuState = false;
       setTimeout(() => {
