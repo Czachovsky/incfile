@@ -1,0 +1,58 @@
+@import "../../../../mixins";
+
+.nonprofitTypes{
+  padding-top:24px;
+  span{
+    line-height: 24px;
+    color:#7A7A7A;
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+    display: block;
+  }
+  h3{
+    font-size: 1.5rem;
+    line-height: 29px;
+    margin-bottom: 48px;
+  }
+  ul{
+    counter-reset: section;
+    list-style-type: none;
+    margin-bottom: 48px;
+    li{
+      border-radius: 5px;
+      background: var(--plain-white);
+      box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
+      margin-bottom:15px;
+      display: block;
+      padding: 28px 40px 40px 80px;
+      position: relative;
+      color: var(--link-color);
+      h4{
+        margin-bottom:36px;
+        margin-top:0;
+      }
+      &::before {
+        counter-increment: section;
+        content:counters(section, ".") " ";
+        position: absolute;
+        height: 32px;
+        width: 32px;
+        background: var(--text-color-blue);
+        color: var(--plain-white);
+        font-family: var(--avenir-heavy-font);
+        font-size: var(--font-size);
+        text-align: center;
+        line-height: 32px;
+        border-radius: 100%;
+        top:24px;
+        left: 24px;
+      }
+      &:last-child{
+        margin:0;
+      }
+    }
+  }
+  a{
+    @include btn-styles-reverse();
+  }
+}

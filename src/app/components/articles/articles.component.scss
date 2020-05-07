@@ -20,7 +20,11 @@
         overflow: hidden;
 
         &:hover {
-
+          .descWrapper{
+            &:before{
+                left:34px;
+            }
+          }
         }
 
         .imgWrapper {
@@ -61,7 +65,18 @@
           color: var(--text-color-blue);
           font-family: var(--avenir-heavy-font);
           padding: 24px 33px 24px 60px;
-
+          position: relative;
+          &:before{
+            content: '';
+            background: url('../../../assets/images/faqComponent/arrow-blue.svg');
+            width:12px;
+            height:11px;
+            display: inline-block;
+            position: absolute;
+            left:24px;
+            top: 43px;
+            transition: left 0.3s ease;
+          }
         }
       }
     }

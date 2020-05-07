@@ -1,13 +1,22 @@
+@import "../../../grid";
+
 footer{
 .copyright{
   border-top:1px solid rgba(244, 244, 244, 0.9);
   padding:40px 0;
   .copy{
       color: #4f4f4f;
+      @include lower-than('md'){
+        text-align: center;
+        margin-bottom: 20px;
+      }
   }
   .social{
     ul{
       text-align: right;
+      @include lower-than('md'){
+        text-align: center;
+      }
       li{
         display: inline-block;
         a{
@@ -29,6 +38,10 @@ footer{
     .logo{
       display: flex;
       align-items: center;
+      @include lower-than('md'){
+        justify-content: center;
+        margin-bottom: 20px;
+      }
       img{
         display: block;
       }
@@ -36,9 +49,29 @@ footer{
     .newsletterWrapper{
       margin-left: auto;
       text-align: right;
+      form{
+        @include lower-than('md'){
+          text-align: center;
+        }
+      }
       label{
         font-family: var(--mark-pro-font);
         margin-right: 16px;
+        @include lower-than('md'){
+          display: block;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        &:after{
+          content: '';
+          width:11px;
+          height:12px;
+          background: url('../../../assets/images/faqComponent/arrow-green.svg');
+          display: inline-block;
+          margin-left:8px;
+          position: relative;
+          top: 2px;
+        }
         span{
           color:#7A7A7A;
         }

@@ -1,7 +1,21 @@
-<section class="faqSection">
-<h2>
-  Common questions on starting a Nonprofit Corporation
-</h2>
+<section class="faqSection container">
+  <div class="container__row">
+    <div class="container__col-md-8 container__col-offset-2">
+      <div class="faqSectionHeader">
+        <h2>
+          Common questions on starting <br/> a Nonprofit Corporation
+        </h2>
+        <a href="#">See all</a>
+      </div>
+      <div class="faqSectionQuestions">
+        <div *ngFor="let questions of questionsAndAnswers; let i = index" [ngClass]="{'expanded' : questions.isExpanded}">
+          <span class="questionArrow"></span>
+          <span class="questionTitle" (click)="expandIt(i)">{{questions.question}}</span>
+          <div class="questionAnswer">{{questions.answer}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="chooseRight">
@@ -15,7 +29,7 @@
     $0 + State Fee & FREE  Registered Agent for 1st year.
   </span>
         <div class="chooseRightButton">
-          <a href="#">Start now</a>
+          <a href="#" class="btn-arrow-reverse">Start now</a>
         </div>
       </div>
     </div>

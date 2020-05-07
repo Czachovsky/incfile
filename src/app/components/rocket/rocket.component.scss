@@ -1,7 +1,27 @@
-.findByState {
-  .searchWrapper {
-    margin-left: auto;
+@import "../../../grid";
 
+.findByState {
+  padding-top: 274px;
+  padding-bottom: 240px;
+  position: relative;
+  .rocket{
+    background: url('../../../assets/images/searchComponent/rocket.png') no-repeat scroll center / 100%;
+    height: 610px;
+    width: 850px;
+    position: absolute;
+    left: -26%;
+    top: 13%;
+  @include lower-than('lg'){
+    transform: scale(0.5);
+    left: - 41%;
+  }
+  }
+  .searchWrapper {
+    max-width: 570px;
+    @include lower-than('md'){
+      max-width: 100%;
+      margin: 0;
+    }
     h2 {
       font-size: 2.5rem;
       font-family: var(--mark-pro-font);
@@ -12,10 +32,12 @@
     .searchBox {
       position: relative;
       height: 80px;
+
       .inputWrapper {
         position: relative;
-        &:before{
-          content:'';
+
+        &:before {
+          content: '';
           height: 16px;
           width: 16px;
           display: block;
@@ -25,6 +47,7 @@
           transform: translateY(-50%);
           background: url('../../../assets/images/searchComponent/search.svg') no-repeat scroll center;
         }
+
         & > img {
           position: absolute;
           left: 40px;
@@ -47,6 +70,7 @@
         border-radius: 5px;
         overflow: hidden;
         width: 100%;
+
         .search_result {
           position: relative;
           width: 100%;

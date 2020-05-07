@@ -24,6 +24,19 @@
         transition: box-shadow 0.3s ease;
         display: flex;
         cursor: pointer;
+        &:after{
+          content: '';
+          width:12px;
+          height:11px;
+          display: inline-block;
+          background: url('../../../assets/images/questionsComponent/arrow-black.svg');
+          position: absolute;
+          right:36px;
+          top:50%;
+          transform: translateY(-50%);
+          transition: all 0.3s ease;
+          opacity: 0;
+        }
         span{
           border-left: 1px solid var(--border-gray-color);
           padding-left:24px;
@@ -38,7 +51,12 @@
         box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
       }
       &:hover{
-
+        & > div{
+          &:after{
+            right:26px;
+            opacity: 1;
+          }
+        }
       }
       &.active{
         box-shadow: 0 40px 80px 0 rgba(171, 171, 171, 0.5);
@@ -63,6 +81,12 @@
         }
         &:nth-child(7){
           z-index: 1;
+        }
+        & > div{
+          &:after{
+            right:26px;
+            opacity: 1;
+          }
         }
       }
     }

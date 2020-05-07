@@ -24,9 +24,22 @@
     ul{
       li{
         line-height: 19px;
-        margin-bottom: 12px;
+        margin-bottom: 20px;
         color:#63666E;
         padding-left:25px;
+        position: relative;
+        &:before{
+          content: '';
+          background: var(--text-color-blue);
+          height:4px;
+          width: 4px;
+          display: block;
+          position: absolute;
+          left:6px;
+          border-radius:100%;
+          top:50%;
+          transform: translateY(-50%);
+        }
       }
     }
   }

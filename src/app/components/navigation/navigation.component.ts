@@ -30,4 +30,8 @@ export class NavigationComponent implements OnInit {
       }, 300);
     }
   }
+
+  menuAction(e) {
+    console.log(e.target.parentElement.classList.add('showSubmenu'));
+  }
 }

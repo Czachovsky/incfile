@@ -267,7 +267,7 @@ export class RocketComponent implements OnInit {
   }
 
   goToState(stateCode, stateName) {
-    console.log(stateName, stateCode);
+    alert(`You have chosen: ${stateName} - ${stateCode}`);
   }
 
   onClickedOutside(e) {
