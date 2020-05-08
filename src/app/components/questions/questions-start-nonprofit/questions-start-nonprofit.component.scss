@@ -16,8 +16,6 @@
   & > ul {
     counter-reset: section;
     list-style-type: none;
-    margin-bottom: 48px;
-
     & > li {
       border-radius: 5px;
       background: var(--plain-white);

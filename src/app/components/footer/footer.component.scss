@@ -35,6 +35,9 @@ footer{
 }
   .newsletter{
     margin-bottom: 75px;
+    @include lower-than('md'){
+      margin-bottom: 40px;
+    }
     .logo{
       display: flex;
       align-items: center;
@@ -87,10 +90,20 @@ footer{
   }
   .footerNav{
     margin-bottom: 80px;
+    @include lower-than('md'){
+      margin-bottom: 12px;
+      padding-top:40px;
+      border-top:1px solid rgba(244, 244, 244, 0.9);
+    }
     & > .container__row{
       justify-content: space-between;
     }
     .menuColumn{
+      @include lower-than('md'){
+        width: 100%;
+        text-align:center;
+        margin-bottom: 30px;
+      }
       h4{
         color:#7A7A7A;
         font-size: 0.75rem;
@@ -99,6 +112,12 @@ footer{
         opacity: 0.9;
         margin:0;
         margin-bottom:24px;
+        @include lower-than('lg'){
+            font-size:0.65rem;
+        }
+        @include lower-than('md'){
+          font-size: 0.75rem;
+        }
       }
       ul{
         li{
@@ -110,6 +129,12 @@ footer{
             display: inline-block;
             &:hover{
               color: var(--text-color-blue);
+            }
+            @include lower-than('lg'){
+              font-size:0.75rem;
+            }
+            @include lower-than('md'){
+              font-size:  0.875rem;
             }
           }
         }
