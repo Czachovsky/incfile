@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="370px" height="460px" viewBox="0 0 370 460" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>3C50517D-6563-4A9D-BB87-98B85B91DFFC</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <radialGradient cx="16.6135661%" cy="100%" fx="16.6135661%" fy="100%" r="96.4585416%" id="radialGradient-1">
+            <stop stop-color="#FFF7EA" offset="0%"></stop>
+            <stop stop-color="#FFBA8C" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Nonprofit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="review-entity-type/nonprofit@2x" transform="translate(-1310.000000, -1635.000000)">
+            <g id="Launch+Dropdown" transform="translate(0.000000, 1512.000000)">
+                <g id="Section/Launch-your-business-with-Incfile">
+                    <g id="launch-your-business">
+                        <g id="bg-curve-full-right">
+                            <g id="Group-2">
+                                <g id="Quadrant" transform="translate(1310.000000, 113.000000)">
+                                    <g id="Group">
+                                        <path d="M404,304.389083 C404,301.376067 401.625219,298.940258 398.629429,298.795956 C381.90821,297.976323 365.15249,293.173968 349.788288,284.007935 C323.004436,268.036642 305.77721,241.98733 300.044385,213.50798 C299.521128,210.887464 297.244098,209 294.581813,209 C291.051267,209 288.411982,212.255443 289.113491,215.730223 C295.450074,247.205273 314.482824,275.990542 344.084213,293.647277 C361.110187,303.800333 379.682931,309.110629 398.215424,309.993755 C401.372215,310.143828 404,307.569489 404,304.394855 L404,304.389083 Z" id="curve" fill="#FFE0A3" transform="translate(346.500000, 259.500000) scale(-1, 1) rotate(-180.000000) translate(-346.500000, -259.500000) "></path>
+                                        <path d="M470,0 L470,470 L0,470 L0,470 C0,210.426168 210.426168,0 470,0 Z" id="bg-curve-full-right" fill="url(#radialGradient-1)" opacity="0.100000001"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
