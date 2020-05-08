@@ -86,7 +86,7 @@ body {
   font-family: var(--avenir-roman-font);
   margin: 0;
   padding: 0;
-
+  overflow-x: hidden;
   textarea, select, input, button {
     outline: none;
     font-size: var(--font-size);
@@ -97,12 +97,12 @@ body {
     height: 40px;
     padding:0 24px;
   }
-  a, a:hover{
+  a, a:hover, input[type="submit"]{
     transition: color 0.3s ease, border 0.3s ease, background 0.3s ease;
     text-decoration: none;
     color: var(--link-color);
   }
-  a:hover{
+  a:hover, input[type="submit"]:hover{
     color: var(--text-color-blue)
   }
   button, button:hover{
@@ -114,7 +114,7 @@ body {
   .btn{
     font-family: var(--mark-pro-font);
     border:2px solid var(--orange-color);
-    border-radius:24px;
+    border-radius:50px;
     background: var(--plain-white);
     color: var(--orange-color);
     padding: 0.7em 2.7em;
@@ -128,7 +128,7 @@ body {
   .btn-reverse{
     font-family: var(--mark-pro-font);
     border:2px solid var(--orange-color);
-    border-radius:24px;
+    border-radius:50px;
     background: var(--orange-color);
     color: var(--plain-white);
     padding: 0.7em 2.7em;
@@ -137,6 +137,18 @@ body {
     &:hover{
       background: var(--plain-white);
       color: var(--orange-color);
+    }
+  }
+  .btn-arrow{
+    background: var(--plain-white) url('assets/images/faqComponent/arrow--orange.svg') no-repeat scroll 90% center !important;
+    &:hover{
+      background: var(--orange-color) url('assets/images/logo/arrow-white.svg') no-repeat scroll 95% center !important;
+    }
+  }
+  .btn-arrow-reverse{
+    background: var(--orange-color) url('assets/images/logo/arrow-white.svg') no-repeat scroll 90% center !important;
+    &:hover{
+      background: var(--plain-white) url('assets/images/faqComponent/arrow--orange.svg') no-repeat scroll 95% center !important;
     }
   }
 }

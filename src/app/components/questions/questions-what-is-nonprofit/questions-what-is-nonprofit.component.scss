@@ -1,3 +1,4 @@
+@import "../../../../grid";
 .whatIsNonprofit{
   padding-top:24px;
   span{
@@ -6,6 +7,9 @@
     font-size: 1.25rem;
     margin-bottom: 24px;
     display: block;
+    @include lower-than('lg'){
+      font-size: 1.063rem;
+    }
   }
   h3{
     font-size: 1.5rem;

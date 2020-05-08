@@ -29,7 +29,7 @@ $map-grid-props: (
     @if($breakpoint == 0 or $breakpoint == 100){
       &{
         max-width:100%;
-        padding: 0 10px;
+        padding: 0 15px;
       }
     } @else {
       &{

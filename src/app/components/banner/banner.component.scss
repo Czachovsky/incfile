@@ -1,45 +1,85 @@
 @import "../../../mixins";
-
+@import "../../../grid";
 .mainBanner {
-  padding-top: 155px;
-  padding-bottom: 120px;
-  background: url('../../../assets/images/bannerComponent/bg-main.svg') no-repeat scroll top right / auto 100%;
+  padding-top: 131px;
+  padding-bottom: 190px;
   position: relative;
+  @include lower-than('lg'){
+    padding-top:100px;
+    padding-bottom:100px;
+  }
+  &:before{
+    content:'';
+    position: absolute;
+    background: url('../../../assets/images/bannerComponent/bg-main.svg') no-repeat scroll top right / 100%;
+    width: 791px;
+    height: 750px;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    @include lower-than('lg'){
+      width: 591px;
+      height: 560px;
+    }
+  }
   .mrBulb {
     background: url('../../../assets/images/bannerComponent/MrsBulbNonprofit.png') no-repeat scroll center / 100%;
     height: 464px;
     width: 400px;
     position: absolute;
     right: 23%;
-    top: 18%;
+    top: 16%;
+    @include lower-than('xl'){
+          right:10%;
+    }
+    @include lower-than('lg'){
+      opacity: .3;
+      height: 364px;
+      width: 300px;
+    }
   }
 
   .mainBannerTitles {
+    margin-top:30px;
+    position: relative;
+    z-index: 10;
+    @include lower-than('md'){
+      margin:0;
+      text-align: center;
+    }
     h1 {
       line-height: 58px;
       font-size: 3rem;
       font-family: var(--mark-pro-font);
       margin-bottom: 25px;
+      @include lower-than('md'){
+        font-size: 2.5rem;
+      }
     }
 
     span {
       color: #7A7A7A;
       line-height: 24px;
       font-size: 1.25rem;
-      margin-bottom: 24px;
+      margin-bottom: 50px;
       display: block;
     }
 
     &Buttons {
+      margin-top:30px;
+      position: relative;
+      @include lower-than('md'){
+        text-align: center;
+      }
       a:first-child {
-        @include btn-styles();
+        @include btn-styles-reverse();
         margin-right: 16px;
-        padding: 12px 48px;
+        padding: 17px 59px;
       }
 
       a:last-child {
-        @include btn-styles-reverse();
-        padding: 12px 48px;
+        @include btn-styles();
+        padding: 17px 59px;
       }
     }
   }

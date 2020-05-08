@@ -1,6 +1,6 @@
 <section class="quiestionsSection">
   <div class="container__row">
-    <div class="container__col-md-4 expandBars">
+    <div class="container__col-lg-4 container__col-md-5 expandBars">
       <ul>
         <li *ngFor="let bar of expandBarElms; let i = index"
             [ngClass]="{'active' : bar.active, 'pseudoActive' : bar.pseudoActive, 'hovered': bar.hovered}">
@@ -13,7 +13,7 @@
 
       </ul>
     </div>
-    <div class="container__col-md-7 expandBarsContent">
+    <div class="container__col-lg-7 container__col-md-6 expandBarsContent">
       <app-questions-overview *ngIf="activeTab === 0"></app-questions-overview>
       <app-questions-what-is-nonprofit *ngIf="activeTab === 1"></app-questions-what-is-nonprofit>
       <app-questions-is-nonprofit-good *ngIf="activeTab === 2"></app-questions-is-nonprofit-good>

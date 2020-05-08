@@ -1,5 +1,6 @@
 @import "../../../mixins";
 @import "../../../grid";
+
 .chooseRight {
   padding: 160px 0;
   background: url('../../../assets/images/faqComponent/usa-map.svg') no-repeat scroll center / auto;
@@ -14,8 +15,8 @@
     line-height: 48px;
     font-size: 2.5rem;
     margin-bottom: 24px;
-    @include lower-than('md'){
-      font-size:2rem;
+    @include lower-than('md') {
+      font-size: 2rem;
     }
   }
 
@@ -28,16 +29,18 @@
   &Button {
     a {
       @include btn-styles-reverse();
+      padding: 17px 48px;
     }
   }
 }
 
 .faqSection {
-  .container__col-offset-2{
-    @include lower-than('lg'){
-      margin:0;
+  .container__col-offset-2 {
+    @include lower-than('lg') {
+      margin: 0;
     }
   }
+
   &Header {
     text-align: center;
     margin-bottom: 80px;
@@ -46,8 +49,8 @@
       font-size: 2.5rem;
       line-height: 48px;
       margin-bottom: 24px;
-      @include lower-than('md'){
-        font-size:2rem;
+      @include lower-than('md') {
+        font-size: 2rem;
       }
     }
 
@@ -55,19 +58,21 @@
       font-family: var(--avenir-heavy-font);
       color: var(--text-color-blue);
       font-size: 1.25rem;
-      &:before{
-        content:'';
+
+      &:before {
+        content: '';
         background: url('../../../assets/images/faqComponent/arrow-blue.svg');
         display: inline-block;
-        width:12px;
+        width: 12px;
         height: 11px;
         margin-right: 12px;
         position: relative;
         left: 0;
         transition: left 0.3s ease;
       }
-      &:hover{
-        &:before{
+
+      &:hover {
+        &:before {
           left: 5px;
         }
       }
@@ -76,7 +81,17 @@
 
   &Questions {
     margin-bottom: 64px;
-
+    position: relative;
+    &:before{
+      content: '';
+      display: block;
+      width: 29px;
+      height:25px;
+      position: absolute;
+      background: url('../../../assets/images/footerComponent/orange_curve.svg') no-repeat scroll center / 100%;
+      left: -29px;
+      top: -24px;
+    }
     & > div {
       border-radius: 5px;
       box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
@@ -89,7 +104,7 @@
         width: 32px;
         display: inline-block;
         position: absolute;
-        background: url('../../../assets/images/faqComponent/Arrow-orange.svg');
+        background: url('../../../assets/images/searchComponent/Arrow-orange.svg');
         top: 24px;
         left: 24px;
         transition: transform 0.3s ease;
@@ -100,8 +115,8 @@
         line-height: 19px;
         display: block;
         cursor: pointer;
-        @include lower-than('md'){
-          font-size:14px;
+        @include lower-than('md') {
+          font-size: 14px;
         }
       }
 
@@ -120,7 +135,7 @@
           height: auto;
           padding: 10px 0 40px 80px;
           height: 137px;
-          @include lower-than('md'){
+          @include lower-than('md') {
             height: 180px;
           }
         }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="412px" height="412px" viewBox="0 0 412 412" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>06564728-B800-48B5-B7F1-0B3EBFF21101</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="16.6135661%" y1="100%" x2="16.6135661%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFF7EA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Nonprofit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="review-entity-type/nonprofit@2x" transform="translate(0.000000, -3060.000000)" fill="url(#linearGradient-1)">
+            <g id="Section/CTA-Choose-the-right-and-start-your-business" transform="translate(0.000000, 2937.000000)">
+                <path d="M412,123 L412,535 L0,535 L0,535 C0,307.458683 184.458683,123 412,123 Z" id="bg-curve-full" transform="translate(206.000000, 329.000000) scale(-1, 1) translate(-206.000000, -329.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

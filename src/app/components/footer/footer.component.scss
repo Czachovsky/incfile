@@ -86,10 +86,28 @@ footer{
           margin:0;
         }
       }
+      input[type="submit"]{
+        color: var(--orange-color);
+        cursor: pointer;
+        &:hover{
+          color: var(--plain-white);
+        }
+      }
     }
   }
   .footerNav{
     margin-bottom: 80px;
+    position: relative;
+    &:before{
+      content: '';
+      width: 115px;
+      height: 101px;
+      position: absolute;
+      display: block;
+      background: url('../../../assets/images/footerComponent/green_curve.svg') no-repeat scroll center / 100%;;
+      right: -102px;
+      bottom: -13px;
+    }
     @include lower-than('md'){
       margin-bottom: 12px;
       padding-top:40px;
@@ -125,7 +143,7 @@ footer{
             font-size:  0.875rem;
             line-height: 17px;
             color:#7A7A7A;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             display: inline-block;
             &:hover{
               color: var(--text-color-blue);

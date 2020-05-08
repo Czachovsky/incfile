@@ -2,7 +2,7 @@
 
 .findByState {
   padding-top: 274px;
-  padding-bottom: 240px;
+  padding-bottom: 300px;
   position: relative;
   .rocket{
     background: url('../../../assets/images/searchComponent/rocket.png') no-repeat scroll center / 100%;
@@ -15,6 +15,83 @@
     transform: scale(0.5);
     left: - 41%;
   }
+    .star{
+      position: absolute;
+      display: inline-block;
+      &_1{
+        width: 9px;
+        height: 9px;
+        background: url('../../../assets/images/searchComponent/star_1.png') no-repeat scroll center / 100% auto;
+        left: 43%;
+        top: 9%;
+      }
+      &_2{
+        width: 24px;
+        height: 24px;
+        background: url('../../../assets/images/searchComponent/star_2.png') no-repeat scroll center / 100% auto;
+        left: 33%;
+        top: 52%;
+        transform: rotate(29deg);
+      }
+      &.curve_1{
+        width: 29px;
+        height: 25px;
+        background: url('../../../assets/images/searchComponent/curve--orange.svg') no-repeat scroll center / 100% auto;
+        left: 71%;
+        bottom: 36%;
+        transform: rotate(90deg);
+      }
+      &.curve_2{
+        width: 29px;
+        height: 25px;
+        opacity: 0.2;
+        background: url('../../../assets/images/searchComponent/curve--violet.svg') no-repeat scroll center / 100% auto;
+        left: 51%;
+        transform: rotate(-90deg);
+        top: -2%;
+      }
+    }
+  }
+  .moon{
+    background: url('../../../assets/images/searchComponent/moon.png') no-repeat scroll center / 100% auto;
+    height: 77px;
+    width: 70px;
+    position: absolute;
+    right: -8%;
+    top: 34%;
+    .star {
+      position: absolute;
+      display: inline-block;
+      &_1{
+        width: 7px;
+        height: 7px;
+        background: url('../../../assets/images/searchComponent/star_1.png') no-repeat scroll center / 100% auto;
+        left: -12px;
+        top: 3px;
+      }
+      &_2{
+        width: 7px;
+        height: 7px;
+        background: url('../../../assets/images/searchComponent/star_1.png') no-repeat scroll center / 100% auto;
+        right: 8px;
+        top: 35px;
+      }
+      &_3{
+        width: 14px;
+        height: 14px;
+        background: url('../../../assets/images/searchComponent/star_3.png') no-repeat scroll center / 100% auto;
+        bottom: -20px;
+      }
+      &.curve_1{
+        width: 29px;
+        height: 25px;
+        background: url('../../../assets/images/searchComponent/curve--violet.svg') no-repeat scroll center / 100% auto;
+        top: -31px;
+        right: 6px;
+        transform: rotate(-12deg);
+        opacity: 0.4;
+      }
+    }
   }
   .searchWrapper {
     max-width: 570px;
