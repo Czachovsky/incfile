@@ -14,7 +14,7 @@
   h2 {
     line-height: 48px;
     font-size: 2.5rem;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     @include lower-than('md') {
       font-size: 2rem;
     }
@@ -23,7 +23,7 @@
   span {
     color: var(--text-color);
     display: inline-block;
-    margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 
   &Button {
@@ -89,14 +89,15 @@
       height:25px;
       position: absolute;
       background: url('../../../assets/images/footerComponent/orange_curve.svg') no-repeat scroll center / 100%;
-      left: -29px;
-      top: -24px;
+      left: -35px;
+      top: -25px;
+
     }
     & > div {
       border-radius: 5px;
       box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
       background: var(--plain-white);
-      margin-bottom: 8px;
+      margin-bottom: 15px;
       position: relative;
 
       .questionArrow {
@@ -105,13 +106,14 @@
         display: inline-block;
         position: absolute;
         background: url('../../../assets/images/searchComponent/Arrow-orange.svg');
-        top: 24px;
-        left: 24px;
+        top: 22px;
+        left: 18px;
         transition: transform 0.3s ease;
+        transform: rotate(90deg);
       }
 
       .questionTitle {
-        padding: 28px 0 28px 80px;
+        padding: 28px 0 28px 75px;
         line-height: 19px;
         display: block;
         cursor: pointer;
@@ -128,12 +130,12 @@
         }
 
         .questionArrow {
-          transform: rotate(180deg);
+          transform: rotate(270deg);
         }
 
         .questionAnswer {
           height: auto;
-          padding: 10px 0 40px 80px;
+          padding: 10px 0 40px 75px;
           height: 137px;
           @include lower-than('md') {
             height: 180px;
@@ -142,7 +144,7 @@
       }
 
       .questionAnswer {
-        padding: 0 0 0 80px;
+        padding: 0 0 0 75px;
         color: var(--text-color);
         height: 0;
         overflow: hidden;

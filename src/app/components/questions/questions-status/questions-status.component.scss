@@ -1,9 +1,10 @@
 @import "../../../../mixins";
 @import "../../../../grid";
 ._status{
-  padding-top:24px;
+  padding-top: 25px;
+  padding-left: 11px;
   span{
-    line-height: 24px;
+    line-height: 32px;
     color:#7A7A7A;
     font-size: 1.25rem;
     margin-bottom: 24px;
@@ -20,14 +21,14 @@
   ul{
     counter-reset: section;
     list-style-type: none;
-    margin-bottom: 48px;
+    margin-bottom: 38px;
     li{
       border-radius: 5px;
       background: var(--plain-white);
       box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
-      margin-bottom:15px;
+      margin-bottom:9px;
       display: block;
-      padding: 40px 40px 40px 80px;
+      padding: 29px 40px 40px 80px;
       position: relative;
       color: var(--link-color);
       &::before {

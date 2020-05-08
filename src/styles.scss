@@ -87,6 +87,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  position: relative;
   textarea, select, input, button {
     outline: none;
     font-size: var(--font-size);
@@ -150,5 +151,14 @@ body {
     &:hover{
       background: var(--plain-white) url('assets/images/faqComponent/arrow--orange.svg') no-repeat scroll 95% center !important;
     }
+  }
+  .bodyCurve{
+    position: absolute;
+    width: 115px;
+    height: 101px;
+    background: url('assets/images/footerComponent/green_curve.svg') no-repeat scroll center / 100%;
+    display: block;
+    right: 9%;
+    bottom: 5%;
   }
 }

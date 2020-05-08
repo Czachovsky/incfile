@@ -13,7 +13,7 @@
         transition: box-shadow 0.3s ease;
         border-radius: 5px;
         overflow: hidden;
-        margin-bottom: 8px;
+        margin-bottom: 7px;
         @for $i from 1 through 7 {
           &:nth-child(#{$i}) div:before {
             background: url('../../../assets/images/questionsComponent/icon_#{$i}.svg') no-repeat scroll center;

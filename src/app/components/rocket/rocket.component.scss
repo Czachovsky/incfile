@@ -1,8 +1,8 @@
 @import "../../../grid";
 
 .findByState {
-  padding-top: 274px;
-  padding-bottom: 300px;
+  padding-top: 250px;
+  padding-bottom: 324px;
   position: relative;
   .rocket{
     background: url('../../../assets/images/searchComponent/rocket.png') no-repeat scroll center / 100%;
@@ -94,6 +94,7 @@
     }
   }
   .searchWrapper {
+    padding-left:8px;
     max-width: 570px;
     @include lower-than('md'){
       max-width: 100%;

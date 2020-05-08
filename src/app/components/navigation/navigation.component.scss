@@ -17,6 +17,7 @@ header {
     align-items: center;
 
     .logo {
+      max-width: 215px;
       img {
         display: block;
       }
@@ -39,7 +40,7 @@ header {
         }
 
         & > li {
-          margin-right: 3em;
+          margin-right: 3.6em;
           display: flex;
           align-items: center;
           vertical-align: middle;
@@ -76,7 +77,7 @@ header {
               background: url('../../../assets/images/navigationComponent/dropdown.svg');
               display: inline-block;
               position: absolute;
-              right: -20px;
+              right: -24px;
               top: 50%;
               transform: translateY(-50%);
               @include lower-than('lg') {
@@ -284,6 +285,8 @@ header {
   }
 
   .menuContainer {
+    flex-basis: calc(100% - 215px);
+    margin-left: auto;
     @include lower-than('lg') {
       display: block;
       position: fixed;

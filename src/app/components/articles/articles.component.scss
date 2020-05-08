@@ -4,11 +4,11 @@
     text-align: center;
     font-size: 1.5rem;
     line-height: 29px;
-    margin-bottom: 80px;
+    margin-bottom: 67px;
   }
 
   .articles {
-    margin-bottom: 160px;
+    margin-bottom: 156px;
     position: relative;
     &:after{
       content: '';
@@ -27,8 +27,8 @@
       background: url('../../../assets/images/searchComponent/curve--orange.svg') no-repeat scroll center / 100%;
       display: block;
       position: absolute;
-      bottom: 16px;
-      left: -7px;
+      bottom: 39px;
+      left: -25px;
       transform: rotate(180deg);
     }
     .singleArticleWrapper {
