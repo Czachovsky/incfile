@@ -2,6 +2,7 @@
 @import "../../../../grid";
 ._status{
   a{
-    @include btn-styles-reverse();
+    color: var(--text-color-blue);
+    font-family: var(--avenir-heavy-font);
   }
 }

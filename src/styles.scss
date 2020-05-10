@@ -162,8 +162,8 @@ body {
       right: 9%;
       bottom: 5%;
       z-index: -1;
-      @include lower-than(''){
-
+      @include lower-than('md'){
+        display: none;
       }
     }
     &.bodyCurve_1{
