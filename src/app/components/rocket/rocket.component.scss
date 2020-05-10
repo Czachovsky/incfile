@@ -4,6 +4,9 @@
   padding-top: 250px;
   padding-bottom: 324px;
   position: relative;
+  @include lower-than('lg'){
+      padding: 150px 0;
+  }
   .rocket{
     background: url('../../../assets/images/searchComponent/rocket.png') no-repeat scroll center / 100%;
     height: 610px;
@@ -15,6 +18,14 @@
     transform: scale(0.5);
     left: - 41%;
   }
+    @include lower-than('md'){
+      transform: none;
+      width: 400px;
+      height: 400px;
+      left: 0;
+      z-index: -1;
+      top: 170px;
+    }
     .star{
       position: absolute;
       display: inline-block;
@@ -59,6 +70,11 @@
     position: absolute;
     right: -8%;
     top: 28%;
+    @include lower-than('md'){
+      right: 4px;
+      top: 75px;
+      z-index: -2;
+    }
     .star {
       position: absolute;
       display: inline-block;
@@ -92,6 +108,9 @@
         opacity: 0.4;
       }
     }
+    @include lower-than('1385px'){
+      right:0;
+    }
   }
   .searchWrapper {
     padding-left:8px;
@@ -105,6 +124,10 @@
       font-family: var(--mark-pro-font);
       line-height: 48px;
       margin-bottom: 40px;
+      @include lower-than('md'){
+        font-size: 2rem;
+        text-align: center;
+      }
     }
 
     .searchBox {

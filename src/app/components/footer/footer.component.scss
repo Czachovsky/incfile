@@ -86,6 +86,9 @@ footer{
         &[type="submit"]{
           margin:0;
         }
+        @include lower-than('lg'){
+          width: 200px;
+        }
       }
       input[type="submit"]{
         color: var(--orange-color);

@@ -1,3 +1,4 @@
+@import "../../../grid";
 .relatedArticles {
   h2 {
     display: block;
@@ -5,11 +6,17 @@
     font-size: 1.5rem;
     line-height: 29px;
     margin-bottom: 67px;
+    @include lower-than('lg'){
+      margin-bottom: 40px;
+    }
   }
 
   .articles {
     margin-bottom: 156px;
     position: relative;
+    @include lower-than('lg'){
+      margin-bottom: 100px;
+    }
     &:after{
       content: '';
       height:21px;
@@ -27,8 +34,8 @@
       background: url('../../../assets/images/searchComponent/curve--orange.svg') no-repeat scroll center / 100%;
       display: block;
       position: absolute;
-      bottom: 39px;
-      left: -25px;
+      bottom: 40px;
+      left: -7px;
       transform: rotate(180deg);
     }
     .singleArticleWrapper {
@@ -40,7 +47,9 @@
         box-shadow: 0 20px 30px 0 rgba(233, 235, 240, 0.5);
         border-radius: 5px;
         overflow: hidden;
-
+        @include lower-than('760px'){
+          max-width: 100%;
+        }
         &:hover {
           .descWrapper{
             &:before{
@@ -55,7 +64,9 @@
           background-repeat: no-repeat;
           background-position: center;
           position: relative;
-
+          @include lower-than('lg') {
+            height: 220px;
+          }
           span {
             border-radius: 5px;
             background: var(--plain-white);
@@ -88,6 +99,7 @@
           font-family: var(--avenir-heavy-font);
           padding: 24px 33px 24px 60px;
           position: relative;
+          background: var(--plain-white);
           &:before{
             content: '';
             background: url('../../../assets/images/faqComponent/arrow-blue.svg');
@@ -98,6 +110,10 @@
             left:24px;
             top: 43px;
             transition: left 0.3s ease;
+            @include lower-than('760px'){
+             top:50%;
+              transform: translateY(-50%);
+            }
           }
         }
       }

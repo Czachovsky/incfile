@@ -1,8 +1,10 @@
 @import "../../../../grid";
 .howToStart {
+  padding-top: 25px;
+  padding-left: 11px;
   span {
-    line-height: 24px;
-    color: #7A7A7A;
+    line-height: 32px;
+    color:#7A7A7A;
     font-size: 1.25rem;
     margin-bottom: 24px;
     display: block;
@@ -20,13 +22,14 @@
   & > ul {
     counter-reset: section;
     list-style-type: none;
+    margin-bottom: 38px;
     & > li {
       border-radius: 5px;
       background: var(--plain-white);
       box-shadow: 0 24px 32px 0 rgba(236, 236, 236, 0.5);
-      margin-bottom: 15px;
+      margin-bottom:9px;
       display: block;
-      padding: 28px 40px 40px 80px;
+      padding: 29px 40px 40px 80px;
       position: relative;
       color: var(--link-color);
 
@@ -37,7 +40,7 @@
 
       &::before {
         counter-increment: section;
-        content: counters(section, ".") " ";
+        content:counters(section, ".") " ";
         position: absolute;
         height: 32px;
         width: 32px;
@@ -48,7 +51,7 @@
         text-align: center;
         line-height: 32px;
         border-radius: 100%;
-        top: 24px;
+        top:24px;
         left: 24px;
       }
 

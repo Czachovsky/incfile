@@ -3,9 +3,13 @@
 
 .chooseRight {
   padding: 160px 0;
-  background: url('../../../assets/images/faqComponent/usa-map.svg') no-repeat scroll center / auto;
+  background: url('../../../assets/images/faqComponent/usa-map.svg') no-repeat scroll center / cover;
   margin-bottom: 80px;
-
+  @include lower-than('lg'){
+    margin-bottom: 40px;
+    padding: 80px 0;
+    background-size: 100% auto;
+  }
   .container__col-md-5 {
     margin: 0 auto;
     text-align: center;
@@ -44,7 +48,9 @@
   &Header {
     text-align: center;
     margin-bottom: 80px;
-
+    @include lower-than('lg'){
+      margin-bottom: 40px;
+    }
     h2 {
       font-size: 2.5rem;
       line-height: 48px;
@@ -91,7 +97,10 @@
       background: url('../../../assets/images/footerComponent/orange_curve.svg') no-repeat scroll center / 100%;
       left: -35px;
       top: -25px;
-
+      @include lower-than('sm'){
+        left:-15px;
+        top:-15px;
+      }
     }
     & > div {
       border-radius: 5px;

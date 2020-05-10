@@ -54,7 +54,21 @@ header {
             margin: 0;
             display: block;
           }
-
+          &.showSubmenu{
+            @include lower-than('lg') {
+              & > a, & > a:hover{
+                color: var(--link-color) !important;
+                &:after{
+                  transform: rotate(0deg) !important;
+                }
+              }
+              & > ul{
+                display: block !important;
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
           a {
             position: relative;
             line-height: 19px;

@@ -32,6 +32,13 @@ export class NavigationComponent implements OnInit {
   }
 
   menuAction(e) {
-    console.log(e.target.parentElement.classList.add('showSubmenu'));
+    e.preventDefault();
+    console.log(e.target.parentElement)
+    if (e.target.parentElement.classList.contains('showSubmenu')) {
+      e.target.parentElement.classList.remove('showSubmenu');
+    } else {
+      e.target.parentElement.classList.add('showSubmenu');
+    }
+
   }
 }

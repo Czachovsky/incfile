@@ -3,8 +3,9 @@
   <div class="articles">
 
     <app-incfile-carousel *ngIf="sliderArray" [options]="{position: 0, width: 400, breakpoints: [
-        {items: 2, screenMin: 500, screenMax: 992},
-         {items: 3, screenMin: 1200, screenMax: 9999}],
+    {items: 1, screenMin: 1, screenMax: 767},
+        {items: 2, screenMin: 767, screenMax: 992},
+         {items: 3, screenMin: 992, screenMax: 9999}],
           dots: true,
           nav: false,
           items: sliderArray}">
