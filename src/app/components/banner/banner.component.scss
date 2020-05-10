@@ -69,6 +69,10 @@
       font-size: 1.25rem;
       margin-bottom: 33px;
       display: block;
+      @include lower-than('md'){
+        font-size: 1rem;
+        color: var(--link-color);
+      }
     }
 
     &Buttons {
@@ -86,6 +90,14 @@
       a:last-child {
         @include btn-styles();
         padding: 17px 45px;
+      }
+      @include lower-than('450px'){
+        a {
+          width:100%;
+          margin:0;
+          margin-bottom:5px;
+        }
+
       }
     }
   }
