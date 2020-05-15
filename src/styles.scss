@@ -158,40 +158,51 @@ body {
     &.bodyCurve{
       width: 115px;
       height: 101px;
-      background: url('assets/images/footerComponent/green_curve.svg') no-repeat scroll center / 100%;
       right: 9%;
       bottom: 5%;
       z-index: -1;
+      svg{
+        width: 100%;
+        height: 100%;
+      }
       @include lower-than('md'){
         display: none;
       }
     }
     &.bodyCurve_1{
-      background: url('assets/images/logo/orange-curve_2.svg') no-repeat scroll center / 100% auto;
       bottom: 56%;
       height: 481px;
       width: 388px;
       right: 0%;
       z-index: -1;
+      svg{
+        width: 100%;
+        height: 100%;
+      }
     }
     &.bodyCurve_2{
-      background: url('assets/images/logo/orange-curve.svg') no-repeat scroll center / 100% auto;
       height: 481px;
       width: 388px;
       bottom: 30%;
       left: 0;
       z-index: -1;
+      svg{
+        width: 100%;
+        height: 100%;
+      }
     }
     &.bodyCurve_3{
-      background: url('assets/images/logo/blue-curve_1.svg') no-repeat scroll center / 100% auto;
       width: 326px;
       height: 332px;
       bottom: 18%;
       right: 0;
       z-index: -2;
+      svg{
+        width: 100%;
+        height: 100%;
+      }
     }
     &.bodyCurve_4{
-      background: url('assets/images/logo/blue-curve.svg') no-repeat scroll center / 100% auto;
       width: 458px;
       height: 456px;
       left: 0;
@@ -199,6 +210,10 @@ body {
       z-index: -1;
       @include lower-than('460px'){
         width: 100%;
+      }
+      svg{
+        width: 100%;
+        height: 100%;
       }
     }
   }
