@@ -21,22 +21,22 @@ import { QuestionsStartNonprofitComponent } from './components/questions/questio
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { IncfileCarouselComponent } from './components/incfile-carousel/incfile-carousel.component';
 import {ClickDirectiveModule} from './shared/directives/click.directive';
-import 'hammerjs';
+// import 'hammerjs';
 
 @Injectable()
-export class MyHammerConfig extends HammerGestureConfig {
-  overrides = <any> {
-    pan: {threshold: 5, direction: 6},
-    swipe: {
-      velocity: 0.4,
-      threshold: 20,
-      direction: 6,
-      touchAction: 'auto'
-    },
-    pinch: {enable: false},
-    rotate: {enable: false}
-  };
-}
+// export class MyHammerConfig extends HammerGestureConfig {
+//   overrides = <any> {
+//     pan: {threshold: 5, direction: 6},
+//     swipe: {
+//       velocity: 0.4,
+//       threshold: 20,
+//       direction: 6,
+//       touchAction: 'auto'
+//     },
+//     pinch: {enable: false},
+//     rotate: {enable: false}
+//   };
+// }
 
 @NgModule({
   declarations: [
@@ -58,18 +58,19 @@ export class MyHammerConfig extends HammerGestureConfig {
     IncfileCarouselComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     ClickOutsideModule,
     BrowserAnimationsModule,
     ClickDirectiveModule,
-    HammerModule
+   // HammerModule
 
   ],
-  providers: [    {
-    provide: HAMMER_GESTURE_CONFIG,
-    useClass: MyHammerConfig
-  }],
+  providers: [ //   {
+ //   provide: HAMMER_GESTURE_CONFIG,
+  //  useClass: MyHammerConfig
+//  }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
